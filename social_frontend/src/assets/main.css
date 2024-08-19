@@ -1,0 +1,115 @@
+/*--- reset css ---*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+/*--- end reset css ---*/
+
+.link {
+  text-decoration: none;
+  color: #212134;
+}
+
+.link:hover {
+  color: #7e22ce;
+}
+
+.link_text-color_purple {
+  color: #7e22ce;
+}
+
+.link_text-size_xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.link_underlined {
+  text-decoration: underline;
+}
+
+
+.flexed-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.flexed-container__left,
+.flexed-container__right {
+  flex: 1 1 0%;
+}
+
+.flexed-container__content-box {
+  padding: 3rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.flexed-container__header {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.flexed-container__text {
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+}
+
+.flexed-container__text_font_bold {
+  font-weight: bold;
+}
+
+
+.form__input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.form__inputs-group {
+  margin-top: 1.5rem;
+}
+
+.form__inputs-group:first-of-type {
+  margin-top: 0;
+}
+
+.form__button {
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: #9333ea;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
